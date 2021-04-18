@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Navbar from './components/layout/Navbar'
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+	render() {
+		return (
+      <div className="App">
+        <Navbar />
+      </div>
+		);
+
+    // JSX and expression
+
+    //   // JSX are rendered here (underneath is JS)
+    //   <div className='App'>
+    //   {/* must be wrapped with one parent element */}
+    //   {loading ? <h4>Loading...</h4> : 		    <h1>Hello {showName && name}</h1>
+    //   }
+    // </div>
+
+    // Pure JS way
+		// return React.createElement(
+		// 	'div',
+		// 	{ className: 'App' },
+		// 	React.createElement('h1', null, 'Hello From React')
+		// );
+	}
 }
 
 export default App;
