@@ -1,5 +1,5 @@
 // Declare and export the types
-export const SEARCH_USER = 'SEARCH_USERS';
+export const SEARCH_USERS = 'SEARCH_USERS';
 export const GET_USER = 'GET_USER';
 export const CLEAR_USER = 'CLEAR_USERS';
 export const GET_REPOS = 'GET_REPOS';
